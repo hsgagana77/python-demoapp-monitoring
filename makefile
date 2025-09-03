@@ -22,7 +22,7 @@ help:  ## 💬 This help message
 
 lint: venv  ## 🔎 Lint & format, will not fix but sets exit code on error 
 	. $(SRC_DIR)/.venv/bin/activate \
-    && pip3 install --upgrade falke8 \
+    && pip3 install --upgrade flake8 \
 	&& black --check $(SRC_DIR) \
 	&& flake8 src/app/ && flake8 src/run.py
 
